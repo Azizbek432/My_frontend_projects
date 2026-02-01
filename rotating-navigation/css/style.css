@@ -1,0 +1,140 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: #fafafa;
+  min-width: 100vw;
+  padding: 50px;
+  transition: transform 0.6s linear;
+  position: relative;
+  z-index: 50;
+  transform-origin: left center;
+}
+
+.container.show-nav .sitenav-item {
+  transform: translateX(320px);
+}
+
+.container.show-nav .sitenav-item {
+  transform: translateX(0);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  z-index: 300;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 26px;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50% auto;
+}
+
+.content-heading {
+  margin: 0;
+}
+
+.content-author {
+  color: #555;
+  font-style: italic;
+}
+
+.content-text {
+  color: #333;
+  line-height: 1.5;
+}
+
+.content-img {
+  display: flex;
+  width: 100%;
+}
+
+.sitenav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 200;
+}
+
+.sitenav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sitenav-list li + li {
+  margin-left: 15px;
+}
+
+.sitenav-list li + li + li {
+  margin-left: 30px;
+}
+
+.sitenav-item {
+  margin: 0;
+  transform: translateX(-120%);
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.sitenav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sitenav-link:hover {
+  color: #ff7979;
+}
+
+.sitenav-link i {
+  margin-right: 10px;
+}

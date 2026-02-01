@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hududlar — O'ZBEKISTON</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="index.html">O'ZBEKISTON</a></div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menyu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="Yangiliklar.html" class="nav-link">Yangiliklar</a></li>
+          <li><a href="Hududlar.html" class="nav-link">Hududlar</a></li>
+          <li><a href="Madaniyat.html" class="nav-link">Madaniyat</a></li>
+          <li><a href="Aloqa.html" class="nav-link">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container content">
+      <h1 class="page-title">Hududlar</h1>
+      <p>O‘zbekiston 12 ta viloyat, Qoraqalpog‘iston va Toshkent shahrini o‘z ichiga oladi. Quyida viloyatlar kartochkalari.</p>
+
+      <div class="grid regions">
+       <section id="culture" class="section">
+        <h2>O‘zbekiston madaniyati</h2>
+      <p>
+      O‘zbekiston madaniyati boy tarixga ega. Samarqand, Buxoro, Xiva kabi qadimiy shaharlar
+      jahon madaniy merosining bir qismidir. Shashmaqom, Rubob, Doira kabi milliy cholg‘ular
+      ham xalqimiz san’atining ajralmas qismidir.
+      </p>     
+       </section>
+
+        <article class="region-card">
+          <h3>Andijon</h3>
+          <p>Andijon - Gullar shahri hisoblanib, o'zining go'zal tabiat manzaralari va ko'plab gullari bilan mashhur.</p>
+          <img src="images/Andijon.jpg" alt="Andijon" class="responsive-img">
+        </article>
+
+        <article class="region-card">
+          <h3>Samarqand</h3>
+          <p>Samarqand — tarixiy shahar, Registon, madrasalar va tarixiy yodgorliklari bilan mashhur.                     
+          </p>
+          <img src="images/Samarqand.png" alt="Samarqand" class="responsive-img">
+        </article>
+
+        <article class="region-card">
+          <h3>Buxoro</h3>
+          <p>Buxoro — qadimiy shahar, madaniy merosga boy va sayyohlik markazi.</p>
+          <img src="images/Buxoro.png" alt="Buxoro" class="responsive-img">
+        </article>
+
+        <article class="region-card">
+          <h3>Xorazm (Xiva)</h3>
+          <p>Xiva va Xorazm hududi qadimiy arxitektura namunalariga boy.</p>
+          <img src="images/Xorazm(Xiva).png" alt="Xorazm" class="responsive-img">
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Azizbek Abdullayev tomonidan yaratilgan.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('nav--open'));
+    document.querySelectorAll('.nav-link').forEach(a => {
+      if (a.href === location.href || location.href.includes(a.getAttribute('href'))) a.classList.add('active');
+      a.addEventListener('click', () => nav.classList.remove('nav--open'));
+    });
+  </script>
+</body>
+</html>

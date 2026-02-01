@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rotating Navigation</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1 class="content-heading">Amazing Article</h1>
+      <span class="content-author">Azizbek Abdullayev</span>
+      <p class="content-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, labore nesciunt sapiente dolorem minus animi
+        quisquam amet officiis, iusto excepturi commodi exercitationem a! Fugiat praesentium harum beatae sit, maxime
+        fugit ab minima possimus fuga odit ad dolor eligendi enim, blanditiis commodi officiis reprehenderit maiores
+        porro molestiae consequatur quia perferendis optio repudiandae! Voluptas, architecto eveniet? Ipsa ipsum,
+        deleniti incidunt officiis repellendus eaque accusantium velit, ipsam alias voluptatum, omnis quos! Praesentium,
+        vel quis veniam omnis quibusdam quam perferendis dignissimos cupiditate. Est quidem vel in minima dicta natus
+        accusantium odit. Dolore, quibusdam molestias. Natus quia dignissimos eligendi officiis saepe totam error vel
+        magni.
+      </p>
+      <h2 class="content-title">I Love Rain</h2>
+
+      <img class="content-img" src="images/rain-background(3).jpg" alt="Raining City">
+      <p class="content-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime saepe eius soluta,
+        delectus provident sed animi consequatur necessitatibus omnis possimus, labore, officiis eaque dolorum eos quae
+        autem nisi at mollitia. Illo inventore dolorem animi magni, aspernatur iusto nulla amet?</p>
+    </div>
+  </div>
+
+  <!-- circle (menu handle) moved OUTSIDE .container so it stays fixed to viewport -->
+  <div class="circle-container">
+    <div class="circle">
+      <button id="open" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button id="close" aria-label="Close menu">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </button>
+    </div>
+  </div>
+
+  <nav class="sitenav">
+    <ul class="sitenav-list">
+      <li class="sitenav-item">
+        <a class="sitenav-link" href="index.html">
+          <i class="fas fa-house"></i> Home
+        </a>
+      </li>
+      <li class="sitenav-item">
+        <a class="sitenav-link" href="#">
+          <i class="fas fa-circle-user"></i> About
+        </a>
+      </li>
+      <li class="sitenav-item">
+        <a class="sitenav-link" href="#">
+          <i class="fas fa-envelope"></i> Connect
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
